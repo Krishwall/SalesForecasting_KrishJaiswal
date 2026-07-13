@@ -9,6 +9,6 @@ def load_data():
         encoding="latin1"
     )
 
-    df["Order Date"] = pd.to_datetime(df["Order Date"])
+    df["Order Date"] = pd.to_datetime(df["Order Date"],format="%d/%m/%Y")
 
     return df
